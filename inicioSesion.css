@@ -7,13 +7,96 @@
     font-weight: 500;
 }
 
+body {
+    background: url('./fondoInicio.jpg')no-repeat;
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #001f3fd3;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-container{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    justify-content: space-between;
+    width: 30%;
+    color: #fff;
+}
+
+header .title-container a{
+    width: 5%;
+}
+
+header .title-container a img{
+    width: 360%;
+    height: auto;
+    margin-top: 10px;
+}
+
+header .title-container p{
+    font-size: 1.5em;
+}
+
+header nav ul li,
+footer ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+header nav ul li a,
+footer ul li a,
+footer a{
+    display: inline-block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+footer ul li a{
+    padding: 10px 10px;
+}
+
+footer ul{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+header nav ul li a:hover,
+footer ul li a:hover,
+footer a:hover{
+    color: #add8e6;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 10%;
+    background-color: #001f3fd3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
 section{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: url('./fondoInicio.jpg')no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -21,9 +104,8 @@ section{
 .form-box{
     position: relative;
     width: 400px;
-    height: auto;
     /* background: transparent; */
-    background-color: rgba(240, 248, 255, 0.347);
+    background-color: rgba(177, 219, 255, 0.347);
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(15px);
@@ -70,7 +152,7 @@ button{
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
-    margin-top: 30%;
+    margin-top: 10%;
 }
 .register{
     font-size: .9em;
