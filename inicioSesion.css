@@ -12,12 +12,27 @@ body {
     background-size: cover;
 }
 
+#back-button {
+    position: fixed;
+    top: -5px;
+    left: 10px;
+    font-size: 2.7em;
+    z-index: 1000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+#back-button:hover{
+    color: #001f3fd3;
+}
+
 header{
     position: fixed;
     top: 0;
     width: 100%;
     height: 10%;
-    background-color: #001f3fd3;
+    /*background-color: #001f3fd3;*/
+    background-color: #cccccc5f;
+    backdrop-filter: blur(15px);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -27,10 +42,14 @@ header{
 .title-container{
     display: flex;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 12%;
     justify-content: space-between;
     width: 30%;
     color: #fff;
+}
+
+.title-container p{
+    margin-bottom: 10px;
 }
 
 header .title-container a{
@@ -80,7 +99,7 @@ footer ul li a:hover,
 footer a:hover,
 #btn-register:hover,
 #btn-login:hover{
-    color: #add8e6;
+    color: #93d5eb;
 }
 
 footer{
@@ -88,11 +107,13 @@ footer{
     bottom: 0px;
     width: 100%;
     height: 10%;
-    background-color: #001f3fd3;
+    /*background-color: #001f3fd3;*/
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+    background-color: #cccccc5f;
+    backdrop-filter: blur(15px);
 }
 
 section{

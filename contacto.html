@@ -20,25 +20,70 @@
         padding: 20px;
         margin-right: 30px;
       }
+      .info-contact h1 {
+        margin-top: 20px;
+      }
       .info-contact p {
-        font-size: 0.7em;
+        font-size: 1em;
+      }
+      .phones p {
+        font-size: 1em;
+      }
+      #social-networks {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+      }
+      #social-networks li {
+        font-size: 1.7em;
+      }
+      #social-networks li a {
+        color: #fff;
+      }
+      #social-networks li a:hover {
+        color: #add8e6;
+        font-size: 1.75em;
+        transition: all 0.5s ease-in-out;
       }
     </style>
   </head>
   <body>
     <header></header>
     <section>
+      <a href="#" class="button" id="back-button"
+        ><i class="fa fa-arrow-circle-left" aria-hidden="true"></i
+      ></a>
       <div class="form-box">
         <div class="info-contact">
           <h1>Dirección</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            non cupiditate.
-          </p>
+          <p>Vicente Guerrero 22, Tlapipinca, 56680 Cocotitlán, Méx.</p>
+          <div class="phones">
+            <h1>Teléfonos</h1>
+            <p>56 24 61 73 74</p>
+            <p>55 78 39 33 56</p>
+            <p>56 28 20 10 33</p>
+          </div>
+          <h1>Redes sociales</h1>
+          <ul id="social-networks">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
         </div>
         <div class="map-contact">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8351.16788576259!2d-99.09157492651241!3d19.39951862894075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc2e3efc321b%3A0xabf8454acb3a3a99!2sUPIICSA%20%E2%80%93%20Unidad%20Profesional%20Interdisciplinaria%20de%20Ingenier%C3%ADa%20y%20Ciencias%20Sociales%20y%20Administrativas%20IPN!5e0!3m2!1ses-419!2smx!4v1710430867721!5m2!1ses-419!2smx"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1304645448954!2d-98.86966829046388!3d19.233145081928946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce18e8365fa9d9%3A0xfef9aac6644f2b54!2sVicente%20Guerrero%2022%2C%20Tlapipinca%2C%2056680%20Cocotitl%C3%A1n%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1710440524692!5m2!1ses-419!2smx"
             width="600"
             height="450"
             style="border: 0"
