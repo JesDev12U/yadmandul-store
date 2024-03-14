@@ -56,7 +56,9 @@ footer ul li{
 
 header nav ul li a,
 footer ul li a,
-footer a{
+footer a,
+#btn-register,
+#btn-login{
     display: inline-block;
     padding: 20px 20px;
     text-decoration: none;
@@ -75,7 +77,9 @@ footer ul{
 
 header nav ul li a:hover,
 footer ul li a:hover,
-footer a:hover{
+footer a:hover,
+#btn-register:hover,
+#btn-login:hover{
     color: #add8e6;
 }
 
@@ -154,6 +158,10 @@ button{
     font-weight: 600;
     margin-top: 10%;
 }
+button:hover{
+    background: #add8e6;
+    transition: 0.2s ease-in-out;
+}
 .register{
     font-size: .9em;
     color: #fff;
@@ -203,4 +211,56 @@ button{
 
 #register-container {
     display: none;
+}
+
+.welcome-container {
+    background-color: #22275f69;
+    color: #fff;
+    margin-left: 10%;
+    width:50vh;
+    height: 70vh;
+    padding: 20px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top-left-radius: 150px; 
+    border-bottom-left-radius: 150px;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.welcome-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.register-welcome-container{
+    display: none;
+}
+
+.move-left{
+    transform: translateX(-180%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.move-right{
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.welcome-container-left-radius{
+    border-top-left-radius: 150px; 
+    border-bottom-left-radius: 150px;
+    border-top-right-radius: 0px; 
+    border-bottom-right-radius: 0px;
+} 
+
+.welcome-container-right-radius{
+    border-top-left-radius: 0px; 
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 150px; 
+    border-bottom-right-radius: 150px;
 }

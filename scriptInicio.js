@@ -3,6 +3,13 @@ const $btnLogin = document.getElementById("btn-login");
 const $loginContainer = document.getElementById("login-container");
 const $registerContainer = document.getElementById("register-container");
 const $formBox = document.querySelector(".form-box");
+const $loginWelcomeContainer = document.querySelector(
+  ".login-welcome-container"
+);
+const $registerWelcomeContainer = document.querySelector(
+  ".register-welcome-container"
+);
+const $welcomeContainer = document.querySelector(".welcome-container");
 
 $btnRegister.addEventListener("click", () => {
   $loginContainer.style.display = "none";
@@ -10,6 +17,13 @@ $btnRegister.addEventListener("click", () => {
   $formBox.style.marginTop = "100px";
   $formBox.style.marginBottom = "40px";
   $formBox.style.transition = "all 1s";
+  $loginWelcomeContainer.style.display = "none";
+  $registerWelcomeContainer.style.display = "block";
+  $welcomeContainer.classList.add("welcome-container-right-radius");
+  $welcomeContainer.style.height = "60vh";
+  $welcomeContainer.classList.add("move-left");
+  $formBox.classList.add("move-right");
+  //document.body.style.background = "url('./fondoinicio2.jpg')";
 });
 
 $btnLogin.addEventListener("click", () => {
@@ -18,4 +32,11 @@ $btnLogin.addEventListener("click", () => {
   $formBox.style.marginTop = "0px";
   $formBox.style.marginBottom = "0px";
   $formBox.style.transition = "all 1s";
+  $welcomeContainer.style.transition = "all 1s";
+  $loginWelcomeContainer.style.display = "block";
+  $registerWelcomeContainer.style.display = "none";
+  $welcomeContainer.classList.remove("welcome-container-right-radius");
+  $welcomeContainer.classList.remove("move-left");
+  $formBox.classList.remove("move-right");
+  //document.body.style.background = "url('./fondoinicio3.jpg')";
 });
