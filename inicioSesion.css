@@ -105,7 +105,8 @@ section{
     background-size: cover;
 }
 
-.form-box{
+.form-box,
+.code-mail{
     position: relative;
     width: 400px;
     /* background: transparent; */
@@ -243,12 +244,12 @@ button:hover{
 
 .move-left{
     transform: translateX(-180%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 2s ease-in-out;
 }
 
 .move-right{
     transform: translateX(100%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 2s ease-in-out;
 }
 
 .welcome-container-left-radius{

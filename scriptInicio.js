@@ -16,7 +16,7 @@ $btnRegister.addEventListener("click", () => {
   $registerContainer.style.display = "block";
   $formBox.style.marginTop = "100px";
   $formBox.style.marginBottom = "40px";
-  $formBox.style.transition = "all 1s";
+  $formBox.style.transition = "all 2s";
   $loginWelcomeContainer.style.display = "none";
   $registerWelcomeContainer.style.display = "block";
   $welcomeContainer.classList.add("welcome-container-right-radius");
@@ -31,8 +31,8 @@ $btnLogin.addEventListener("click", () => {
   $registerContainer.style.display = "none";
   $formBox.style.marginTop = "0px";
   $formBox.style.marginBottom = "0px";
-  $formBox.style.transition = "all 1s";
-  $welcomeContainer.style.transition = "all 1s";
+  $formBox.style.transition = "all 2s";
+  $welcomeContainer.style.transition = "all 2s";
   $loginWelcomeContainer.style.display = "block";
   $registerWelcomeContainer.style.display = "none";
   $welcomeContainer.classList.remove("welcome-container-right-radius");
