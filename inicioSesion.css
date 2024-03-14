@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url('./fondoInicio.jpg')no-repeat;
+    background: url('./fondoInicio3.jpg')no-repeat;
     background-size: cover;
 }
 
@@ -80,7 +80,7 @@ footer a:hover{
 }
 
 footer{
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
     width: 100%;
     height: 10%;
@@ -111,12 +111,12 @@ section{
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
-    color: #232121;
+    color: #fff;
     padding: 30px;
 }
 h2{
     font-size: 2em;
-    color: #232121;
+    color: #fff;
     text-align: center;
 }
 .inputbox {
@@ -130,7 +130,7 @@ h2{
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
-    color: #232121;
+    color: #fff;
     font-size: 1em;
     pointer-events: none;
     transition: .5s;
@@ -156,13 +156,13 @@ button{
 }
 .register{
     font-size: .9em;
-    color: #232121;
+    color: #fff;
     text-align: center;
     margin: 25px 0 10px;
 }
 .register p a{
     text-decoration: none;
-    color: #232121;
+    color: #fff;
     font-weight: 600;
 }
 .register p a:hover {
@@ -176,19 +176,19 @@ button{
     outline: none;
     font-size: 1em;
     padding: 0 35px 0 5px;
-    color: #232121;
+    color: #fff;
 }
 .inputbox ion-icon{
     position: absolute;
     right: 8px;
-    color: #232121;
+    color: #fff;
     font-size: 1.2em;
     top: 20px;
 }
 .forget{
     margin: -15px 0 15px;
     font-size: .9em;
-    color: #232121;
+    color: #fff;
     display: flex;
     justify-content: space-between;
 }
@@ -196,7 +196,11 @@ button{
     margin-right: 3px;
 }
 .forget label a{
-    color: #232121;
+    color: #fff;
     text-decoration: none;
     margin-left: 60px;
+}
+
+#register-container {
+    display: none;
 }

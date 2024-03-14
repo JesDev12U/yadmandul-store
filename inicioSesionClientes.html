@@ -34,26 +34,66 @@
       <div class="form-box">
         <div class="form-value">
           <form action="">
-            <h2>Inicio de sesión</h2>
-            <div class="inputbox">
-              <ion-icon name="mail-outline"></ion-icon>
-              <input type="email" required />
-              <label for="">Usuario</label>
+            <div id="login-container">
+              <h2>Inicio de sesión</h2>
+              <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" required />
+                <label for="">Usuario</label>
+              </div>
+              <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="password" required />
+                <label for="">Contraseña</label>
+              </div>
+              <div class="forget">
+                <label for=""
+                  ><input type="checkbox" />Recordar
+                  <a href="#">Olvidé la contraseña</a></label
+                >
+              </div>
+              <button>Inicio</button>
+              <div class="register">
+                <p>
+                  No tengo una cuenta
+                  <a href="#" id="btn-register">Registrarse</a>
+                </p>
+              </div>
             </div>
-            <div class="inputbox">
-              <ion-icon name="mail-outline"></ion-icon>
-              <input type="password" required />
-              <label for="">Contraseña</label>
-            </div>
-            <div class="forget">
-              <label for=""
-                ><input type="checkbox" />Recordar
-                <a href="#">Olvidé la contraseña</a></label
-              >
-            </div>
-            <button>Inicio</button>
-            <div class="register">
-              <p>No tengo una cuenta <a href="#">Registrarse</a></p>
+            <div id="register-container">
+              <h2>Registro</h2>
+              <div class="inputbox">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" required />
+                <label for="">Nombre</label>
+              </div>
+              <div class="inputbox">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" required />
+                <label for="">Apellido</label>
+              </div>
+              <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" required />
+                <label for="">Correo</label>
+              </div>
+              <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="password" required />
+                <label for="">Contraseña</label>
+              </div>
+              <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="password" required />
+                <label for="">Confirmar contraseña</label>
+              </div>
+              <button>Registro</button>
+              <div class="register">
+                <p>
+                  Ya tengo una cuenta
+                  <a href="#" id="btn-login">Iniciar sesión</a>
+                </p>
+              </div>
             </div>
           </form>
         </div>
@@ -78,5 +118,6 @@
       </ul>
       <a href="">Mapa del sitio</a>
     </footer>
+    <script src="./scriptInicio.js"></script>
   </body>
 </html>
