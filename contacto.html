@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Yadmandul store</title>
+    <link rel="stylesheet" type="text/css" href="inicioSesion.css" />
+    <script
+      src="https://kit.fontawesome.com/ecae724dfb.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .form-box {
+        width: 150vh;
+        margin-top: 50px;
+      }
+      .info-contact {
+        width: 100%;
+        float: left;
+        padding: 20px;
+        margin-right: 30px;
+      }
+      .info-contact p {
+        font-size: 0.7em;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <section>
+      <div class="form-box">
+        <div class="info-contact">
+          <h1>Dirección</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            non cupiditate.
+          </p>
+        </div>
+        <div class="map-contact">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8351.16788576259!2d-99.09157492651241!3d19.39951862894075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc2e3efc321b%3A0xabf8454acb3a3a99!2sUPIICSA%20%E2%80%93%20Unidad%20Profesional%20Interdisciplinaria%20de%20Ingenier%C3%ADa%20y%20Ciencias%20Sociales%20y%20Administrativas%20IPN!5e0!3m2!1ses-419!2smx!4v1710430867721!5m2!1ses-419!2smx"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+    <script>
+      fetch("inicioSesionClientes.html")
+        .then((response) => response.text())
+        .then((html) => {
+          let parser = new DOMParser();
+          let doc = parser.parseFromString(html, "text/html");
+          let header = doc.querySelector("header");
+          let footer = doc.querySelector("footer");
+          document.querySelector("header").innerHTML = header.innerHTML;
+          document.querySelector("footer").innerHTML = footer.innerHTML;
+        });
+    </script>
+  </body>
+</html>
