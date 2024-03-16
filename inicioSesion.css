@@ -42,28 +42,28 @@ header{
 .title-container{
     display: flex;
     align-items: center;
-    margin-left: 12%;
-    justify-content: space-between;
+    /* margin-left: 12%; */
+    /* justify-content: space-between; */
     width: 30%;
     color: #fff;
 }
 
-.title-container p{
+/* .title-container p{
     margin-bottom: 10px;
-}
+} */
 
-header .title-container a{
+.title-container a{
     width: 5%;
 }
 
-header .title-container a img{
+.title-container a img{
     width: 360%;
     height: auto;
-    margin-top: 10px;
 }
 
-header .title-container p{
+.title-container p{
     font-size: 1.5em;
+    margin-left: 100px;
 }
 
 header nav ul li,
@@ -256,10 +256,11 @@ button:hover{
 
 .welcome-container h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .register-welcome-container{
+    padding-right: 40px;
     display: none;
 }
 
@@ -285,4 +286,9 @@ button:hover{
     border-bottom-left-radius: 0px;
     border-top-right-radius: 150px; 
     border-bottom-right-radius: 150px;
+}
+
+#logo-welcome img{
+    margin-top: 40px;
+    width: 70%;
 }

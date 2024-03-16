@@ -20,13 +20,15 @@ $btnRegister.addEventListener("click", () => {
   $loginWelcomeContainer.style.display = "none";
   $registerWelcomeContainer.style.display = "block";
   $welcomeContainer.classList.add("welcome-container-right-radius");
-  $welcomeContainer.style.height = "60vh";
+  // $welcomeContainer.style.height = "60vh";
+  $welcomeContainer.style.marginBottom = "100px";
   $welcomeContainer.classList.add("move-left");
   $formBox.classList.add("move-right");
   //document.body.style.background = "url('./fondoinicio2.jpg')";
 });
 
 $btnLogin.addEventListener("click", () => {
+  $welcomeContainer.style.marginBottom = "0px";
   $loginContainer.style.display = "block";
   $registerContainer.style.display = "none";
   $formBox.style.marginTop = "0px";
