@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto | Yadmandul store</title>
     <link rel="stylesheet" type="text/css" href="inicioSesion.css" />
+    <link rel="icon" href="./logo_definitivo.png" type="image/png" />
     <script
       src="https://kit.fontawesome.com/ecae724dfb.js"
       crossorigin="anonymous"
@@ -98,17 +99,6 @@
       </div>
     </section>
     <footer></footer>
-    <script>
-      fetch("inicioSesionClientes.html")
-        .then((response) => response.text())
-        .then((html) => {
-          let parser = new DOMParser();
-          let doc = parser.parseFromString(html, "text/html");
-          let header = doc.querySelector("header");
-          let footer = doc.querySelector("footer");
-          document.querySelector("header").innerHTML = header.innerHTML;
-          document.querySelector("footer").innerHTML = footer.innerHTML;
-        });
-    </script>
+    <script src="scriptHeaderFooter.js"></script>
   </body>
 </html>

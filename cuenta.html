@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[USER] | Yadmandul store</title>
+    <link rel="stylesheet" type="text/css" href="inicioSesion.css" />
+    <link rel="icon" href="./logo_definitivo.png" type="image/png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./stylesCuenta.css" />
+    <script
+      src="https://kit.fontawesome.com/ecae724dfb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header></header>
+    <aside>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;Mi perfil</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-brands fa-shopify"></i>&nbsp;&nbsp;&nbsp;Compras</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-clipboard-list"></i
+              >&nbsp;&nbsp;&nbsp;Pedidos</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-cart-shopping"></i
+              >&nbsp;&nbsp;&nbsp;Carrito</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <div class="user-data">
+        <img src="./user.png" alt="[USER]" /><br />
+        <input type="file" accept="image/*" />
+        <button id="btn-change-photo">Cambiar foto</button>
+        <h2>[USER]</h2>
+        <h3>[EMAIL]</h3>
+        <div class="user-modify-data">
+          <div class="name-container">
+            <h4>
+              <i class="fa-solid fa-signature"></i>&nbsp;&nbsp;&nbsp;Nombre
+            </h4>
+            <input type="text" placeholder="[NAME]" />
+            <button>Modificar</button>
+          </div>
+          <div class="name-container">
+            <h4>
+              <i class="fa-solid fa-signature"></i>&nbsp;&nbsp;&nbsp;Apellido
+              paterno
+            </h4>
+            <input type="text" placeholder="[APPAT]" />
+            <button>Modificar</button>
+          </div>
+          <div class="name-container">
+            <h4>
+              <i class="fa-solid fa-signature"></i>&nbsp;&nbsp;&nbsp;Apellido
+              materno
+            </h4>
+            <input type="text" placeholder="[APMAT]" />
+            <button>Modificar</button>
+          </div>
+          <div class="name-container">
+            <h4>
+              <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;Correo
+              electrónico
+            </h4>
+            <input type="text" placeholder="[EMAIL]" />
+            <button>Modificar</button>
+          </div>
+          <div class="name-container">
+            <h4><i class="fa-solid fa-key"></i>&nbsp;&nbsp;&nbsp;Password</h4>
+            <input type="text" placeholder="[PASSWD]" />
+            <button>Modificar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="scriptHeaderFooter.js"></script>
+    <script>
+      document
+        .querySelector("input[type=file]")
+        .addEventListener("change", function (e) {
+          let reader = new FileReader();
+          reader.onload = (event) => {
+            document.querySelector(".user-data img").src = event.target.result;
+          };
+          reader.readAsDataURL(e.target.files[0]);
+        });
+    </script>
+  </body>
+</html>

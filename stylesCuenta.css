@@ -1,0 +1,99 @@
+aside {
+    background-color: #001f3f;
+    width: 10%;
+    height: 100vh;
+    top: 60px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+aside nav ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+aside nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+aside nav ul li a:hover{
+    color: #93d5eb;
+}
+
+main{
+    height: 100vh;
+}
+.user-data {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    top: 100px;
+    left: 180px;
+}
+
+.user-modify-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    top: -70px;
+    left: 380px;
+    position: absolute;
+}
+
+.user-data img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.name-container{
+    background-color: #022337;
+    padding: 20px;
+    padding-top: 0;
+    width: 70vh;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.name-container h4{
+    font-size: 1.5em;
+}
+
+.name-container input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.user-data h2, h3{
+    color: #000;
+}
+
+#btn-change-photo{
+    background-color: #001f3f;
+    color: #fff;
+}
+
+#btn-change-photo:hover{
+    background-color: #93d5eb;
+    color: #000;
+}
