@@ -332,6 +332,16 @@
       </div>
     </main>
     <script>
+      document
+        .querySelector("input[type=file]")
+        .addEventListener("change", function (e) {
+          let reader = new FileReader();
+          reader.onload = (event) => {
+            document.querySelector(".user-data img").src = event.target.result;
+          };
+          reader.readAsDataURL(e.target.files[0]);
+        });
+
       const $btnProfile = document.getElementById("btn-profile");
       const $btnEmployees = document.getElementById("btn-employees");
       const $btnClients = document.getElementById("btn-clients");
