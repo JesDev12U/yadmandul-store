@@ -1,0 +1,72 @@
+header {
+    color: #fff;
+    display: flex;
+}
+.title-container {
+    width: 50%;
+}
+.title-container a img {
+    width: 350%;
+}
+header p {
+    margin: 0;
+    width: 100%;
+}
+aside {
+    margin-top: 4%;
+    height: 200vh;
+}
+
+.employees-container,
+.clients-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -105%;
+    margin-left: 100px;
+    background-color: #022337;
+    color: #fff;
+}
+
+#employee-photo,
+#client-photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.employees-container table,
+.clients-container table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+.employees-container table th,
+.clients-container table th{
+    background-color: #000e1b;
+    color: #fff;
+    padding: 20px;
+}
+
+.employees-container table td,
+.clients-container table td{
+    padding: 20px;
+    text-align: center;
+}
+
+.employees-container table tr:nth-child(even),
+.clients-container table tr:nth-child(even){
+    background-color: #001f3f;
+}
+
+.employees-container table tr:nth-child(odd),
+.clients-container table tr:nth-child(odd){
+    background-color: #022337;
+}
+.employees-container table tr:hover,
+.clients-container table tr:hover{
+    background-color: #0256ab;
+}
