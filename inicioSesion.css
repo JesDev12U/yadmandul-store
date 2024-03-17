@@ -251,7 +251,7 @@ button:hover{
     background-color: #22275f69;
     color: #fff;
     margin-left: 10%;
-    width:50vh;
+    width:40vh;
     height: 70vh;
     padding: 20px;
     padding-left: 40px;
@@ -264,6 +264,7 @@ button:hover{
     border-bottom-left-radius: 150px;
     backdrop-filter: blur(15px);
     border: 2px solid rgba(255, 255, 255, 0.5);
+    margin-top: 10%;
 }
 
 .welcome-container h1 {
