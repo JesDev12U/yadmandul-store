@@ -34,18 +34,51 @@ aside nav ul li a:hover{
     color: #93d5eb;
 }
 
-main{
+.btn-aside-active{
+    background-color: #93d5eb;
+    padding: 5px;
+    border-radius: 20px;
+    color: #000;
+}
+
+.btn-aside-active:hover{
+    color: #000;
+}
+
+.main-purchases {
+    position: relative;
+    min-height: 50vh;
+    overflow: auto;
+    margin-top: -500px;
+    margin-left: 100px;
+}
+
+.main-user-data{
     height: 100vh;
 }
-.user-data {
+.user-data{
     position:absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
     top: 100px;
     left: 180px;
+}
+
+.purchases-container{
+    /* background-color: #001f3f; */
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 110vh;
+    height: 200vh;
+    padding: 20px;
+    margin-left: 120px;
+    margin-bottom: 100px;
 }
 
 .user-modify-data{
@@ -96,4 +129,68 @@ main{
 #btn-change-photo:hover{
     background-color: #93d5eb;
     color: #000;
+}
+
+.product-purchase{
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center;
+    justify-content: center; */
+    /* top: -20px;
+    left: 80px; */
+    /* position: absolute; */
+    margin-top: 10px;
+    background-color: #001f3f;
+    color: #fff;
+    width: 120vh;
+    padding: 20px;
+}
+
+.product-purchase h1{
+    margin: 0;
+    font-size: 1em;
+}
+
+.product-purchase hr{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-purchase img {
+    width: 100px;
+    height: 100px;
+}
+
+.product-details{
+    display: flex;
+    margin-top: 20px;
+}
+
+.product-details-text{
+    margin: 0;
+    margin-left: 20px;
+}
+
+.product-details-text h3{
+    color: #fff;
+}
+
+#btn-show-product {
+    background-color: #93d5eb;
+    color: #000;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 170px;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-show-product:hover {
+    background-color: #004387;
+    color: #fff;
 }

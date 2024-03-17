@@ -19,23 +19,23 @@
       <nav>
         <ul>
           <li>
-            <a href="#"
+            <a href="#" id="btn-profile"
               ><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;Mi perfil</a
             >
           </li>
           <li>
-            <a href="#"
+            <a href="#" id="btn-purchases"
               ><i class="fa-brands fa-shopify"></i>&nbsp;&nbsp;&nbsp;Compras</a
             >
           </li>
           <li>
-            <a href="#"
+            <a href="#" id="btn-orders"
               ><i class="fa-solid fa-clipboard-list"></i
               >&nbsp;&nbsp;&nbsp;Pedidos</a
             >
           </li>
           <li>
-            <a href="#"
+            <a href="#" id="btn-cart"
               ><i class="fa-solid fa-cart-shopping"></i
               >&nbsp;&nbsp;&nbsp;Carrito</a
             >
@@ -44,7 +44,7 @@
       </nav>
     </aside>
     <main>
-      <div class="user-data">
+      <div class="user-data" style="display: none">
         <img src="./user.png" alt="[USER]" /><br />
         <input type="file" accept="image/*" />
         <button id="btn-change-photo">Cambiar foto</button>
@@ -89,6 +89,126 @@
           </div>
         </div>
       </div>
+      <div class="purchases-container">
+        <div class="product-purchase">
+          <h1>[DATE]</h1>
+          <hr />
+
+          <div class="product-details">
+            <img src="./product.png" alt="Product" />
+            <div class="product-details-text">
+              <h3>Nombre del producto: [PRODUCT]</h3>
+              <h3>Precio: [PRICE]</h3>
+              <h3>Cantidad: [QUANTITY]</h3>
+            </div>
+            <a href="" id="btn-show-product">Ver producto</a>
+          </div>
+          <hr />
+          <h3 style="color: #fff">Total: [TOTAL]</h3>
+        </div>
+        <div class="product-purchase">
+          <h1>[DATE]</h1>
+          <hr />
+
+          <div class="product-details">
+            <img src="./product.png" alt="Product" />
+            <div class="product-details-text">
+              <h3>Nombre del producto: [PRODUCT]</h3>
+              <h3>Precio: [PRICE]</h3>
+              <h3>Cantidad: [QUANTITY]</h3>
+            </div>
+            <a href="" id="btn-show-product">Ver producto</a>
+          </div>
+          <div class="product-details">
+            <img src="./product.png" alt="Product" />
+            <div class="product-details-text">
+              <h3>Nombre del producto: [PRODUCT]</h3>
+              <h3>Precio: [PRICE]</h3>
+              <h3>Cantidad: [QUANTITY]</h3>
+            </div>
+            <a href="" id="btn-show-product">Ver producto</a>
+          </div>
+          <div class="product-details">
+            <img src="./product.png" alt="Product" />
+            <div class="product-details-text">
+              <h3>Nombre del producto: [PRODUCT]</h3>
+              <h3>Precio: [PRICE]</h3>
+              <h3>Cantidad: [QUANTITY]</h3>
+            </div>
+            <a href="" id="btn-show-product">Ver producto</a>
+          </div>
+          <hr />
+          <h3 style="color: #fff">Total: [TOTAL]</h3>
+        </div>
+        <div class="product-purchase">
+          <h1>[DATE]</h1>
+          <hr />
+
+          <div class="product-details">
+            <img src="./product.png" alt="Product" />
+            <div class="product-details-text">
+              <h3>Nombre del producto: [PRODUCT]</h3>
+              <h3>Precio: [PRICE]</h3>
+              <h3>Cantidad: [QUANTITY]</h3>
+            </div>
+            <a href="" id="btn-show-product">Ver producto</a>
+          </div>
+          <div class="product-details">
+            <img src="./product.png" alt="Product" />
+            <div class="product-details-text">
+              <h3>Nombre del producto: [PRODUCT]</h3>
+              <h3>Precio: [PRICE]</h3>
+              <h3>Cantidad: [QUANTITY]</h3>
+            </div>
+            <a href="" id="btn-show-product">Ver producto</a>
+          </div>
+          <div class="product-details">
+            <img src="./product.png" alt="Product" />
+            <div class="product-details-text">
+              <h3>Nombre del producto: [PRODUCT]</h3>
+              <h3>Precio: [PRICE]</h3>
+              <h3>Cantidad: [QUANTITY]</h3>
+            </div>
+            <a href="" id="btn-show-product">Ver producto</a>
+          </div>
+          <hr />
+          <h3 style="color: #fff">Total: [TOTAL]</h3>
+        </div>
+        <div class="product-purchase">
+          <h1>[DATE]</h1>
+          <hr />
+
+          <div class="product-details">
+            <img src="./product.png" alt="Product" />
+            <div class="product-details-text">
+              <h3>Nombre del producto: [PRODUCT]</h3>
+              <h3>Precio: [PRICE]</h3>
+              <h3>Cantidad: [QUANTITY]</h3>
+            </div>
+            <a href="" id="btn-show-product">Ver producto</a>
+          </div>
+          <div class="product-details">
+            <img src="./product.png" alt="Product" />
+            <div class="product-details-text">
+              <h3>Nombre del producto: [PRODUCT]</h3>
+              <h3>Precio: [PRICE]</h3>
+              <h3>Cantidad: [QUANTITY]</h3>
+            </div>
+            <a href="" id="btn-show-product">Ver producto</a>
+          </div>
+          <div class="product-details">
+            <img src="./product.png" alt="Product" />
+            <div class="product-details-text">
+              <h3>Nombre del producto: [PRODUCT]</h3>
+              <h3>Precio: [PRICE]</h3>
+              <h3>Cantidad: [QUANTITY]</h3>
+            </div>
+            <a href="" id="btn-show-product">Ver producto</a>
+          </div>
+          <hr />
+          <h3 style="color: #fff">Total: [TOTAL]</h3>
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script src="scriptHeaderFooter.js"></script>
@@ -102,6 +222,49 @@
           };
           reader.readAsDataURL(e.target.files[0]);
         });
+
+      const $btnProfile = document.getElementById("btn-profile");
+      const $btnPurchases = document.getElementById("btn-purchases");
+      const $btnOrders = document.getElementById("btn-orders");
+      const $btnCart = document.getElementById("btn-cart");
+      const $userData = document.querySelector(".user-data");
+      const $purchasesContainer = document.querySelector(
+        ".purchases-container"
+      );
+      const $main = document.querySelector("main");
+
+      function profile() {
+        $userData.style.display = "block";
+        $purchasesContainer.style.display = "none";
+        $btnProfile.classList.add("btn-aside-active");
+        $main.classList.remove("main-purchases");
+        $main.classList.add("main-user-data");
+        $btnPurchases.classList.remove("btn-aside-active");
+      }
+
+      window.onload = profile;
+
+      $btnProfile.addEventListener("click", () => {
+        $userData.style.display = "block";
+        $purchasesContainer.style.display = "none";
+        $btnProfile.classList.add("btn-aside-active");
+        $main.classList.remove("main-purchases");
+        $main.classList.add("main-user-data");
+        $btnPurchases.classList.remove("btn-aside-active");
+        $btnProfile.classList.add("btn-aside-active:hover");
+        $btnPurchases.classList.remove("btn-aside-active:hover");
+      });
+
+      $btnPurchases.addEventListener("click", () => {
+        $userData.style.display = "none";
+        $purchasesContainer.style.display = "block";
+        $btnProfile.classList.remove("btn-aside-active");
+        $btnPurchases.classList.add("btn-aside-active");
+        $main.classList.remove("main-user-data");
+        $main.classList.add("main-purchases");
+        $btnProfile.classList.remove("btn-aside-active:hover");
+        $btnPurchases.classList.add("btn-aside-active:hover");
+      });
     </script>
   </body>
 </html>
