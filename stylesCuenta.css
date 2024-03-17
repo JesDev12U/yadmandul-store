@@ -49,7 +49,7 @@ aside nav ul li a:hover{
     position: relative;
     min-height: 50vh;
     overflow: auto;
-    margin-top: -500px;
+    margin-top: -50%;
     margin-left: 100px;
 }
 
@@ -62,8 +62,8 @@ aside nav ul li a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 100px;
-    left: 180px;
+    top: 20%;
+    left: 20%;
 }
 
 .purchases-container{
@@ -119,11 +119,14 @@ aside nav ul li a:hover{
 
 .user-data h2, h3{
     color: #000;
+    text-align: center;
+    margin-left: -15%;
 }
 
 #btn-change-photo{
     background-color: #001f3f;
     color: #fff;
+    width: 80%;
 }
 
 #btn-change-photo:hover{
