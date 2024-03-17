@@ -231,17 +231,8 @@
     </main>
     <footer></footer>
     <script src="scriptHeaderFooter.js"></script>
+    <script src="./scriptFotoPerfil.js"></script>
     <script>
-      document
-        .querySelector("input[type=file]")
-        .addEventListener("change", function (e) {
-          let reader = new FileReader();
-          reader.onload = (event) => {
-            document.querySelector(".user-data img").src = event.target.result;
-          };
-          reader.readAsDataURL(e.target.files[0]);
-        });
-
       const $btnProfile = document.getElementById("btn-profile");
       const $btnPurchases = document.getElementById("btn-purchases");
       const $btnOrders = document.getElementById("btn-orders");

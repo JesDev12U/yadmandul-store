@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>[ADMIN] | Yadmandul store</title>
-  </head>
-  <body>
     <link rel="stylesheet" type="text/css" href="inicioSesion.css" />
     <link rel="icon" href="./logo_definitivo.png" type="image/png" />
     <link rel="stylesheet" href="./style.css" />
@@ -15,6 +13,8 @@
       src="https://kit.fontawesome.com/ecae724dfb.js"
       crossorigin="anonymous"
     ></script>
+  </head>
+  <body>
     <header>
       <div class="title-container">
         <a href="#"><img src="./logo_definitivo.png" alt="logo" /></a>
@@ -331,17 +331,8 @@
         </table>
       </div>
     </main>
+    <script src="./scriptFotoPerfil.js"></script>
     <script>
-      document
-        .querySelector("input[type=file]")
-        .addEventListener("change", function (e) {
-          let reader = new FileReader();
-          reader.onload = (event) => {
-            document.querySelector(".user-data img").src = event.target.result;
-          };
-          reader.readAsDataURL(e.target.files[0]);
-        });
-
       const $btnProfile = document.getElementById("btn-profile");
       const $btnEmployees = document.getElementById("btn-employees");
       const $btnClients = document.getElementById("btn-clients");
