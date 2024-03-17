@@ -34,12 +34,12 @@
               >&nbsp;&nbsp;&nbsp;Pedidos</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a href="#" id="btn-cart"
               ><i class="fa-solid fa-cart-shopping"></i
               >&nbsp;&nbsp;&nbsp;Carrito</a
             >
-          </li>
+          </li> -->
         </ul>
       </nav>
     </aside>
@@ -79,12 +79,12 @@
               <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;Correo
               electrónico
             </h4>
-            <input type="text" placeholder="[EMAIL]" />
+            <input type="email" placeholder="[EMAIL]" />
             <button>Modificar</button>
           </div>
           <div class="name-container">
             <h4><i class="fa-solid fa-key"></i>&nbsp;&nbsp;&nbsp;Password</h4>
-            <input type="text" placeholder="[PASSWD]" />
+            <input type="password" placeholder="[PASSWD]" />
             <button>Modificar</button>
           </div>
         </div>
@@ -209,6 +209,25 @@
           <h3 style="color: #fff">Total: [TOTAL]</h3>
         </div>
       </div>
+      <div class="orders-container" style="display: none">
+        <div class="product-order">
+          <h1>[DATE]</h1>
+          <h1>Estatus: [STATUS]</h1>
+          <hr />
+          <div class="product-details">
+            <img src="./product.png" alt="Product" />
+            <div class="product-details-text">
+              <h3>Nombre del producto: [PRODUCT]</h3>
+              <h3>Precio: [PRICE]</h3>
+              <h3>Cantidad: [QUANTITY]</h3>
+            </div>
+            <a href="" id="btn-show-product">Ver producto</a>
+          </div>
+          <hr />
+          <h3 style="color: #fff">Total: [TOTAL]</h3>
+          <button>Cancelar</button>
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script src="scriptHeaderFooter.js"></script>
@@ -231,6 +250,7 @@
       const $purchasesContainer = document.querySelector(
         ".purchases-container"
       );
+      const $ordersContainer = document.querySelector(".orders-container");
       const $main = document.querySelector("main");
 
       function profile() {
@@ -247,16 +267,19 @@
       $btnProfile.addEventListener("click", () => {
         $userData.style.display = "block";
         $purchasesContainer.style.display = "none";
+        $ordersContainer.style.display = "none";
         $btnProfile.classList.add("btn-aside-active");
         $main.classList.remove("main-purchases");
         $main.classList.add("main-user-data");
         $btnPurchases.classList.remove("btn-aside-active");
         $btnProfile.classList.add("btn-aside-active:hover");
         $btnPurchases.classList.remove("btn-aside-active:hover");
+        $btnOrders.classList.remove("btn-aside-active");
       });
 
       $btnPurchases.addEventListener("click", () => {
         $userData.style.display = "none";
+        $ordersContainer.style.display = "none";
         $purchasesContainer.style.display = "block";
         $btnProfile.classList.remove("btn-aside-active");
         $btnPurchases.classList.add("btn-aside-active");
@@ -264,6 +287,21 @@
         $main.classList.add("main-purchases");
         $btnProfile.classList.remove("btn-aside-active:hover");
         $btnPurchases.classList.add("btn-aside-active:hover");
+        $btnOrders.classList.remove("btn-aside-active");
+      });
+
+      $btnOrders.addEventListener("click", () => {
+        $userData.style.display = "none";
+        $purchasesContainer.style.display = "none";
+        $btnProfile.classList.remove("btn-aside-active");
+        $btnPurchases.classList.remove("btn-aside-active");
+        $main.classList.remove("main-user-data");
+        //$main.classList.remove("main-purchases");
+        $main.classList.add("main-purchases");
+        $btnProfile.classList.remove("btn-aside-active:hover");
+        $btnPurchases.classList.remove("btn-aside-active:hover");
+        $btnOrders.classList.add("btn-aside-active");
+        $ordersContainer.style.display = "block";
       });
     </script>
   </body>
